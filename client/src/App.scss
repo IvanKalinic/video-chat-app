@@ -1,0 +1,16 @@
+@import "styles";
+
+.app-bar {
+  @include flexbox(row, center, center);
+  border-radius: 15px;
+  margin: 30px 100px;
+  height: 50px;
+  width: 600px;
+  border: 2px solid set-text-color($primary-color);
+  font-size: 2rem;
+}
+
+.parent-container {
+  @include flexbox(column, center, center);
+  width: 100%;
+}
