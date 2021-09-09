@@ -1,0 +1,5 @@
+@import "../../styles.scss";
+
+.notification-container {
+  @include flexbox(row, center, center);
+}
