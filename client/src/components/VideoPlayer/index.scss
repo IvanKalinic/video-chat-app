@@ -1,0 +1,16 @@
+@import "../../styles.scss";
+
+.video-container {
+  width: 100%;
+  @include flexbox(row, center, center);
+
+  @media screen and (max-width: 900px) {
+    @include flexbox(column, center, center);
+  }
+}
+
+.paper-container {
+  min-width: 400px;
+  //   width: 50%;
+  //   padding: 30px 30px;
+}
