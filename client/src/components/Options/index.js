@@ -24,9 +24,12 @@ const Options = ({ children }) => {
                 value={name}
                 className="text-field"
                 onChange={(e) => setName(e.target.value)}
+                placeholder="Enter your name"
               />
               <CopyToClipboard text={me} className="">
-                <button type="button"> Copy Your ID</button>
+                <button type="button" class="option-btn">
+                  Copy Your ID
+                </button>
               </CopyToClipboard>
             </div>
           </div>
@@ -38,6 +41,7 @@ const Options = ({ children }) => {
                 value={idToCall}
                 className="text-field"
                 onChange={(e) => setIdToCall(e.target.value)}
+                placeholder="Paste Your ID"
               />
               {callAccepted && !callEnded ? (
                 <button

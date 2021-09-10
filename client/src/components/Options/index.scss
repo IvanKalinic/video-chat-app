@@ -13,16 +13,38 @@
 }
 
 .option-btn {
-  width: 200px;
-  height: 50px;
-  padding: 10px 10px;
+  margin: 10px 10px;
+  padding: 10px 60px;
   @include flexbox(center, center, center);
   cursor: pointer;
-  border: 3px solid black;
-  border-radius: 5px;
+  // border: 2px solid black;
+  // border-radius: 2px;
+  max-width: 220px;
+  font-size: 16px;
+  border: none;
+  box-shadow: $light-shadow;
   background-color: set-text-color($primary-color);
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 .call {
   margin-left: 15px;
   font-size: 24px;
+  color: green;
+}
+
+.info-container {
+  @include flexbox(column, center, center);
+}
+input {
+  border: 0;
+  padding: 0 0px;
+  height: 35px;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.4s;
+  float: left;
+  margin-bottom: -2px;
 }

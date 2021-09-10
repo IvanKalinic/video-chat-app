@@ -4,6 +4,7 @@
 }
 
 $primary-color: #272727;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
 @mixin flexbox($direction, $align, $justify) {
   display: flex;
